@@ -33,7 +33,7 @@ export default function AuthenticatedLayout({ header, children }) {
                                 {/* <NavLink href={route('pdf-files.index')} active={route().current('pdf-files.*')}>
                                     Arquivos
                                 </NavLink> */}
-                                <NavLink href={route('coas.index')} active={route().current('pdf-files.*')}>
+                                <NavLink href={route('coas.index')} active={route().current('coas.*')}>
                                     ControleCoa
                                 </NavLink>
                             </div>
@@ -139,6 +139,11 @@ export default function AuthenticatedLayout({ header, children }) {
                             active={route().current('dashboard')}
                         >
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            href={route('coas.index')}
+                            active={route().current('coas.*')}>
+                            ControleCoa
                         </ResponsiveNavLink>
                     </div>
 
